@@ -1,7 +1,9 @@
 <html lang="ru"> <!-- Язык сайта - русский -->
-  <head>    
+  <head> 
+    <!-- Подключение шаблона header -->  
     {% include 'includes/head.html' %}
     <title>
+      <!-- подключение блока title из дочернего шаблона  -->
       {% block title %}
         Это главная страница.
       {% endblock %}
@@ -9,14 +11,17 @@
   </head>
   <body>
     <header>
+        <!-- подключение шаблона header -->
         {% include 'includes/header.html' %}
     </header>
     <main>
+      <!-- подключение блока main из основного шаблона приложения -->
       {% block content %}
         Контент не подвезли :(
       {% endblock %}
     </main>
     <footer>
+      <!-- подключние шаблона footer -->
         {% include 'includes/footer.html' %} 
     </footer>
   </body>
